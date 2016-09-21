@@ -692,7 +692,9 @@ function pgmDetails() {
 }
 function chatInitiate() {
     return ({
-        speech: "Hello, I am Verizon Entertainment bot.  I can help you with  TV Recommendations or Recording a program. What would you like to do?",
+        speech: "Hello, I am Verizon Entertainment bot. 
+        I can help you with  TV Recommendations or Recording a program. 
+        What would you like to do?",
        
         displayText: "TV Recommendations",
         data: {
