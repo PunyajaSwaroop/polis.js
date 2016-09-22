@@ -701,7 +701,7 @@ function chatInitiate() {
                     "type": "template",
                     "payload": {
                         "template_type": "button",
-                        "text": "Hi, I am Verizon Entertainment bot. I can help you with  TV Recommendations or Recording a program.  What would you like to do?",
+                        "text": " I can help you with  TV Recommendations or Recording a program.  What would you like to do?",
                         "buttons": [
                             {
                                 "type": "postback",
