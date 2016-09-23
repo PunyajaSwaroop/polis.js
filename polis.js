@@ -691,6 +691,8 @@ function pgmDetails() {
     });
 }
 function chatInitiate() {
+	
+	res.json(welcomeMsg());
     return ({
         speech: "Hi, I am Verizon Entertainment bot. Hello, I am Verizon Entertainment bot.I can help you with  TV Recommendations or Recording a program.What would you like to do?",
        
