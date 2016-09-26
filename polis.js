@@ -102,7 +102,7 @@ function welcomeInit()
     
     return (
       { speech: " Hey Tabi, Welcome to Verizon!",
-          displayText: " Hey Tabi, Welcome to Verizon!",
+          displayText: " Hey Tabii, Welcome to Verizon!",
         data: {
 		"facebook": [
 			{"text": "Here is a video to watch:"},
@@ -692,7 +692,7 @@ function pgmDetails() {
 }
 function chatInitiate() {
     return ({
-        speech: "Hi, I am Verizon Entertainment bot.  I can help you with  TV Recommendations or Recording a program. What would you like to do?",
+        speech: "Hi, I am Verizon Entertainment bot, and I can help you with  TV Recommendations or Recording a program. What would you like to do?",
         displayText: "TV Recommendations",
         data: {
             "facebook": {
