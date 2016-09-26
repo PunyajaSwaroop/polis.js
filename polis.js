@@ -41,7 +41,7 @@ res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
     switch (action) {
         case "welcome":
-             res.json(chatInitiate());
+             res.json(chatinimessage());
             break;
         case "getStarted":
             res.json(welcomeMsg());
@@ -102,7 +102,7 @@ function welcomeInit()
     
     return (
       { speech: " Hey Tabi, Welcome to Verizon!",
-          displayText: " Hey Tabi, Welcome to Verizon!",
+          displayText: " Hey Tabii, Welcome to Verizon!",
         data: {
 		"facebook": [
 			{"text": "Here is a video to watch:"},
@@ -690,9 +690,43 @@ function pgmDetails() {
         source: "Zero Service - app_zero.js"
     });
 }
-function chatInitiate() {
+
+function chatinimessage() {
     return ({
-        speech: "Hi, I am Verizon Entertainment bot.  I can help you with  TV Recommendations or Recording a program. What would you like to do?",
+        speech: "Hi, I am Verizon Entertainment bot",
+        displayText: "TV Recommendations",
+        data: {
+            "facebook": {
+                "attachment": {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": "Hi, I am Verizon Entertainment bot.  I can help you with  TV Recommendations or Recording a program. What would you like to do?",
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "TV Recommendations",
+                                "payload": "Yes"
+                            },
+                            {
+                                "type": "postback",
+                                "title": "Record",
+                                "payload": "I want to record"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        source: "Zero Service - app_zero.js"
+    });
+}
+
+function chatInitiate() {
+	
+	
+    return ({
+        speech: "I can help you with  TV Recommendations or Recording a program. What would you like to do?",
         displayText: "TV Recommendations",
         data: {
             "facebook": {
