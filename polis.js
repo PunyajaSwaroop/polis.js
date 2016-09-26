@@ -692,27 +692,14 @@ function pgmDetails() {
 }
 
 
-function cmessage()
-	{
-	return(
-		{
-		speech: "heyo wassup",
-			displayText: "message 2",
-			
-		
-			
-		}
-			 source: "Zero Service - app_zero.js"
-	)
-	}
+
 
 
 function chatInitiate() {
 	
 	
     return ({
-        speech: "Hi, I am Verizon Entertainment bot." +
-        "Hello, I am Verizon Entertainment bot.I can help you with  TV Recommendations or Recording a program.What would you like to do?",
+        speech: "Hi, I am Verizon Entertainment bot..................Hello, I am Verizon Entertainment bot.I can help you with  TV Recommendations or Recording a program.What would you like to do?",
        
         displayText: "TV Recommendations",
         data: {
