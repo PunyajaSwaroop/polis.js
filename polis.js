@@ -41,7 +41,7 @@ res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
     switch (action) {
         case "welcome":
-             res.json(chatInitiate());
+             res.json(cmessage());
             break;
         case "getStarted":
             res.json(welcomeMsg());
@@ -690,19 +690,57 @@ function pgmDetails() {
         source: "Zero Service - app_zero.js"
     });
 }
-function chatInitiate() {
-	
-	function cmessage()
+
+
+function cmessage()
 	{
 	return(
 		{
 		speech: "heyo wassup",
 			displayText: "message 2",
 			
+		
+			
 		}
+			 source: "Zero Service - app_zero.js"
 	)
 	}
-  
+
+
+function chatInitiate() {
+	
+	
+    return ({
+        speech: "Hi, I am Verizon Entertainment bot." +
+        "Hello, I am Verizon Entertainment bot.I can help you with  TV Recommendations or Recording a program.What would you like to do?",
+       
+        displayText: "TV Recommendations",
+        data: {
+            "facebook": {
+                "attachment": {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "button",
+                        "text": " I can help you with  TV Recommendations or Recording a program.  What would you like to do?",
+                        "buttons": [
+                            {
+                                "type": "postback",
+                                "title": "TV Recommendations",
+                                "payload": "Yes"
+                            },
+                            {
+                                "type": "postback",
+                                "title": "Record",
+                                "payload": "I want to record"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        source: "Zero Service - app_zero.js"
+    });
+}
 function billInquiry() {
     return ({
         speech: "Let me get an expert to help you.  Please click on the link below.",
