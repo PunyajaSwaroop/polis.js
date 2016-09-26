@@ -692,7 +692,7 @@ function pgmDetails() {
 }
 function chatInitiate() {
 	
-	function chat()
+	function cmessage()
 	{
 	return(
 		{
@@ -702,37 +702,7 @@ function chatInitiate() {
 		}
 	)
 	}
-    return ({
-        speech: "Hi, I am Verizon Entertainment bot." +
-        "Hello, I am Verizon Entertainment bot.I can help you with  TV Recommendations or Recording a program.What would you like to do?",
-       
-        displayText: "TV Recommendations",
-        data: {
-            "facebook": {
-                "attachment": {
-                    "type": "template",
-                    "payload": {
-                        "template_type": "button",
-                        "text": " I can help you with  TV Recommendations or Recording a program.  What would you like to do?",
-                        "buttons": [
-                            {
-                                "type": "postback",
-                                "title": "TV Recommendations",
-                                "payload": "Yes"
-                            },
-                            {
-                                "type": "postback",
-                                "title": "Record",
-                                "payload": "I want to record"
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        source: "Zero Service - app_zero.js"
-    });
-}
+  
 function billInquiry() {
     return ({
         speech: "Let me get an expert to help you.  Please click on the link below.",
