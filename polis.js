@@ -723,6 +723,8 @@ function chatinimessage() {
 }
 
 function chatInitiate() {
+	
+	function chatinimessage(),
     return ({
         speech: "I can help you with  TV Recommendations or Recording a program. What would you like to do?",
         displayText: "TV Recommendations",
