@@ -41,7 +41,7 @@ res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
     switch (action) {
         case "welcome":
-             res.json(cmessage());
+             res.json(chatinitiate());
             break;
         case "getStarted":
             res.json(welcomeMsg());
