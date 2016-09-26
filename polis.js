@@ -41,7 +41,7 @@ res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
     switch (action) {
         case "welcome":
-             res.json(chatInitiate());
+             res.json(chatinimessage());
             break;
         case "getStarted":
             res.json(welcomeMsg());
@@ -724,7 +724,7 @@ function chatinimessage() {
 
 function chatInitiate() {
 	
-	function chatinimessage(),
+	
     return ({
         speech: "I can help you with  TV Recommendations or Recording a program. What would you like to do?",
         displayText: "TV Recommendations",
