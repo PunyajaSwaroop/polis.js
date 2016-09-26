@@ -280,7 +280,7 @@ function recommendTVNew(callback) {
      
      //http://vzbotapi.azurewebsites.net/api/values  https://vznode1.herokuapp.com/api/webhook/
      //https://www98.verizon.com/foryourhome/vzrepair/flowengine/restapi.ashx
-     //{"Flow": "TroubleShooting Flows\\Test\\APIChatBot.xml","Request":{"ThisValue":"Trending"}}
+     //{"Flow": "TroubleShooting Flows\\Test\\APIBot.xml","Request":{"ThisValue":"Trending"}}
      //https://www98.verizon.com/Ondemand/VzWhatsHot.ashx
    request( 
          'https://www98.verizon.com/Ondemand/api/utilWebAPI/GetWhatsHot', 
